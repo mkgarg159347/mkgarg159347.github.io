@@ -1,45 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Munish Kumar | QA Automation Engineer</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    body {
-      font-family: Arial;
+    * {
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.6;
     }
 
     header {
-      background: #111827;
+      background: linear-gradient(135deg, #111827, #1f2937);
       color: white;
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
-    section {
-      max-width: 1000px;
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #d1d5db;
+    }
+
+    .container {
+      max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
     }
 
     .card {
       background: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
-    h1, h2 {
-      margin-top: 0;
+    h2 {
+      color: #111827;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #1e40af;
     }
 
     ul {
-      line-height: 1.8;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #2563eb;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 14px;
     }
 
     a {
@@ -48,107 +92,209 @@
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
       background: #111827;
       color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .experience-item {
+      margin-bottom: 30px;
+    }
+
+    .experience-item p {
+      margin-top: 10px;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Munish Kumar</h1>
-  <p>Senior QA Automation Engineer | SDET | Mobile & API Automation</p>
-</header>
+  <header>
+    <h1>Munish Kumar</h1>
+    <p>Senior QA Automation Engineer | SDET | Mobile & API Automation</p>
+    <p>Toronto, Ontario, Canada</p>
 
-<section>
+    <br>
 
-  <div class="card">
-    <h2>About Me</h2>
     <p>
-      QA Automation Engineer with experience in Playwright, Cypress,
-      Robot Framework, Mobile Automation, CI/CD pipelines,
-      AI-assisted QA workflows, and scalable automation frameworks.
+      <a href="mailto:mkgarg159347@gmail.com">mkgarg159347@gmail.com</a> |
+      <a href="https://linkedin.com/in/munish-kumar-41a210127" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/mkgarg159347" target="_blank">GitHub</a>
     </p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>About Me</h2>
+
+      <p>
+        QA Automation Engineer with extensive experience in Playwright, Cypress,
+        Robot Framework, API Automation, Mobile Automation, CI/CD pipelines,
+        AI-assisted QA workflows, and scalable automation frameworks.
+        Experienced in building automation solutions from scratch,
+        improving software quality, and accelerating release cycles.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Technical Skills</h2>
+
+      <div class="skills">
+        <div class="skill">Playwright</div>
+        <div class="skill">Cypress</div>
+        <div class="skill">TypeScript</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">Robot Framework</div>
+        <div class="skill">GitHub Actions</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Kubernetes</div>
+        <div class="skill">LambdaTest</div>
+        <div class="skill">API Automation</div>
+        <div class="skill">Mobile Automation</div>
+        <div class="skill">TestRail</div>
+        <div class="skill">Testomat.io</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Hive</div>
+        <div class="skill">Datadog</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Highlighted Projects</h2>
+
+      <div class="project">
+        <h3>Mobile Automation Framework</h3>
+
+        <p>
+          Built scalable mobile automation framework from scratch for Flutter applications
+          with iOS and Android support using real device cloud infrastructure.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>QA Orchestration Pipeline</h3>
+
+        <p>
+          Designed an AI-powered QA orchestration pipeline integrating Cursor IDE,
+          Jira, Confluence, GitHub, LambdaTest, and Datadog to accelerate
+          test development and production defect analysis.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Playwright Migration Initiative</h3>
+
+        <p>
+          Migrated legacy Selenium automation frameworks to Playwright,
+          improving test stability, execution speed, and maintainability.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h2>Professional Experience</h2>
+
+      <div class="experience-item">
+        <h3>SingleOps — QA Automation Software Developer</h3>
+        <p>March 2025 – Present</p>
+
+        <ul>
+          <li>Established QA processes and test quality standards for a mobile automation project from the ground up.</li>
+          <li>Built scalable mobile and API automation frameworks.</li>
+          <li>Implemented AI-powered QA orchestration pipeline.</li>
+          <li>Integrated Testomat.io for advanced test management and traceability.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Emburse — Senior Test Automation Engineer</h3>
+        <p>Oct 2023 – March 2025</p>
+
+        <ul>
+          <li>Developed automation frameworks using Playwright and TypeScript.</li>
+          <li>Implemented GitHub Actions CI/CD pipelines.</li>
+          <li>Integrated Allure reporting with screenshots and videos.</li>
+          <li>Migrated Selenium framework to Playwright.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>RBC — Test Automation Engineer</h3>
+
+        <ul>
+          <li>Built Robot Framework automation solutions.</li>
+          <li>Automated API validation and database comparison utilities.</li>
+          <li>Implemented Jenkins pipelines for regression execution.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Exiger — Software Developer In Test</h3>
+
+        <ul>
+          <li>Led QA team performing manual and automation testing.</li>
+          <li>Migrated Protractor framework to Cypress TypeScript.</li>
+          <li>Implemented Kubernetes-based execution pipelines.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+
+      <h3>Seneca Polytechnic</h3>
+      <p>Graduate Certificate — Business Analytics</p>
+
+      <br>
+
+      <h3>Conestoga College</h3>
+      <p>Graduate Certificate — Big Data Solution Architecture</p>
+
+      <br>
+
+      <h3>Punjabi University</h3>
+      <p>Bachelor's Degree — Computer Science</p>
+    </div>
+
+    <div class="card">
+      <h2>Certifications</h2>
+
+      <ul>
+        <li>Machine Learning and AI Foundations: Decision Trees</li>
+        <li>Artificial Intelligence Foundations: Neural Networks</li>
+        <li>Learning Python</li>
+        <li>Learning Docker</li>
+        <li>Learning Linux Command Line</li>
+      </ul>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h2>Skills</h2>
-
-    <ul>
-      <li>Playwright</li>
-      <li>Cypress</li>
-      <li>TypeScript</li>
-      <li>Python</li>
-      <li>GitHub Actions</li>
-      <li>Jenkins</li>
-      <li>Robot Framework</li>
-      <li>Mobile Automation</li>
-      <li>API Automation</li>
-      <li>LambdaTest</li>
-      <li>Docker</li>
-      <li>Kubernetes</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Projects</h2>
-
-    <h3>Mobile Automation Framework</h3>
-    <p>
-      Built scalable mobile automation framework for Flutter apps with
-      iOS and Android support using cloud device farms.
-    </p>
-
-    <h3>QA Orchestration Pipeline</h3>
-    <p>
-      Integrated Cursor IDE, Jira, GitHub, Confluence,
-      LambdaTest, and Datadog for faster test creation and debugging.
-    </p>
-
-    <h3>Playwright Migration</h3>
-    <p>
-      Migrated legacy Selenium framework to Playwright,
-      improving execution speed and maintainability.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Experience</h2>
-
-    <p><strong>SingleOps</strong> — QA Automation Software Developer</p>
-    <p><strong>Emburse</strong> — Senior Test Automation Engineer</p>
-    <p><strong>RBC</strong> — Test Automation Engineer</p>
-    <p><strong>Exiger</strong> — Software Developer In Test</p>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-
-    <p>Email: mkgarg159347@gmail.com</p>
-
-    <p>
-      LinkedIn:
-      <a href="https://linkedin.com/in/munish-kumar-41a210127">
-        View Profile
-      </a>
-    </p>
-
-    <p>
-      GitHub:
-      <a href="https://github.com/YOUR_USERNAME">
-        View GitHub
-      </a>
-    </p>
-  </div>
-
-</section>
-
-<footer>
-  © 2026 Munish Kumar
-</footer>
+  <footer>
+    © 2026 Munish Kumar | QA Automation Engineer
+  </footer>
 
 </body>
+
 </html>
